@@ -71,6 +71,8 @@ Follow these steps to run the game locally:
 - **Editor**: Visual Studio Code  
 
 ---
+### Output Image  
+![Animal Game Preview](https://github.com/IT3133-Practical/Assignment-03/blob/main/Screenshot.png)  
 
 ## License
 
