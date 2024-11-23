@@ -33,7 +33,39 @@ const StudentTable = (props) => {
                             </td>
                         </tr>
                     </thead>
-                    
+                    <tbody>
+                        {
+                            props.students.map((student, key) => {
+                                return (
+                                    <tr key={key}>
+                                        <td>
+                                            {student.firstName}
+
+                                        </td>
+                                        <td>
+                                            {student.lastName}
+
+                                        </td>
+                                        <td>
+                                            {student.course}
+
+                                        </td>
+                                        <td>
+                                            {student.address.country}
+
+                                        </td>
+                                        <td>
+                                            <button
+                                                id={student.studentId}
+                                                onClick={() => setStu(student)}>
+                                                View
+                                            </button>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
                 </table>
             </div>
             <div className='rightDiv'>
